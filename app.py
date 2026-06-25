@@ -241,9 +241,9 @@ st.divider()
 if "messages" not in st.session_state:
     st.session_state.messages = []
     st.session_state.messages.append({
-        "role": "assistant",
-        "content": "Hey Arun! 👋 I'm **Buddy**, your personal AI learning mentor powered by Gemini.\n\nAsk me anything — I'll give you clear, direct answers just like ChatGPT! 🚀"
-    })
+    "role": "assistant",
+    "content": "Hey! 👋 I'm **Buddy**, your personal AI mentor.\n\nWhat would you like to learn today?"
+})
 
 for message in st.session_state.messages:
     with st.chat_message(message["role"]):
