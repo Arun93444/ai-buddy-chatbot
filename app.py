@@ -21,6 +21,23 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="expanded"
 )
+st.markdown("""
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+* { font-family: 'Inter', sans-serif !important; }
+.stApp { 
+    background-color: #212121 !important; 
+}
+.stApp > header { display: none !important; }
+#MainMenu {visibility: hidden !important;}
+footer {visibility: hidden !important;}
+header {visibility: hidden !important;}
+[data-testid="stSidebarCollapseButton"] {display: none !important;}
+button[kind="header"] {display: none !important;}
+[data-testid="collapsedControl"] {display: none !important;}
+</style>
+""", unsafe_allow_html=True)
 
 st.markdown("""
 <style>
