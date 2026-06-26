@@ -136,12 +136,27 @@ section[data-testid="stSidebar"] * { color: #ececec !important; }
     -webkit-text-fill-color: transparent;
 }
 .stat-lbl { font-size: 11px; color: #8e8ea0; margin-top: 2px; }
-
 hr { border-color: #2a2a2a !important; }
 ::-webkit-scrollbar { width: 4px; }
 ::-webkit-scrollbar-track { background: #212121; }
 ::-webkit-scrollbar-thumb { background: #3a3a3a; border-radius: 2px; }
 ::-webkit-scrollbar-thumb:hover { background: #7c6af7; }
+
+/* Force sidebar always open */
+section[data-testid="stSidebar"] {
+    width: 260px !important;
+    min-width: 260px !important;
+    transform: none !important;
+    visibility: visible !important;
+    display: block !important;
+}
+[data-testid="stSidebarContent"] {
+    visibility: visible !important;
+    display: block !important;
+}
+[data-testid="collapsedControl"] {
+    display: none !important;
+}
 </style>
 """, unsafe_allow_html=True)
 
